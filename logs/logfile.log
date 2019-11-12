@@ -1,0 +1,82 @@
+[12/Nov/2019 16:43:09] ERROR [django.request:284] Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/raviranjan/mwrd/inspection/views.py", line 6, in home
+    return render(request, 'index.html')
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 988, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 955, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 103, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 16, in url
+    return static(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 204, in inner
+    self._setup()
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 394, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 39, in __init__
+    *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/core/files/storage.py", line 185, in __init__
+    self.location = abspathu(self.base_location)
+  File "/Library/Python/2.7/site-packages/django/utils/_os.py", line 30, in abspathu
+    if not isabs(path):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'tuple' object has no attribute 'startswith'
+[12/Nov/2019 16:43:09] ERROR [django.request:284] Internal Server Error: /home/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/raviranjan/mwrd/inspection/views.py", line 6, in home
+    return render(request, 'index.html')
+  File "/Library/Python/2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/django/template/loader.py", line 97, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/django/template/backends/django.py", line 95, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 206, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 197, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 988, in render
+    bit = node.render_annotated(context)
+  File "/Library/Python/2.7/site-packages/django/template/base.py", line 955, in render_annotated
+    return self.render(context)
+  File "/Library/Python/2.7/site-packages/django/templatetags/static.py", line 103, in render
+    url = self.url(context)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 16, in url
+    return static(path)
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 9, in static
+    return staticfiles_storage.url(path)
+  File "/Library/Python/2.7/site-packages/django/utils/functional.py", line 204, in inner
+    self._setup()
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 394, in _setup
+    self._wrapped = get_storage_class(settings.STATICFILES_STORAGE)()
+  File "/Library/Python/2.7/site-packages/django/contrib/staticfiles/storage.py", line 39, in __init__
+    *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/django/core/files/storage.py", line 185, in __init__
+    self.location = abspathu(self.base_location)
+  File "/Library/Python/2.7/site-packages/django/utils/_os.py", line 30, in abspathu
+    if not isabs(path):
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/posixpath.py", line 54, in isabs
+    return s.startswith('/')
+AttributeError: 'tuple' object has no attribute 'startswith'

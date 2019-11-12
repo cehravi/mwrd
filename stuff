@@ -1,0 +1,29 @@
+
+migrations are DB queries (not actual raw queries, but all backgrouod stuff is run by django loader in raw form)
+- not visible to developer
+
+each app has its own migration - ye sab 1 app hai -- auth, admin.. all created by django
+out app is inspection only yet, and no migration coz no db stuff yet
+
+auth, admin, sessions.. ye sab djangio khud provide krta hai,, managed in db, has to be run by us
+
+django DB migrations commands :
+
+pwd : should be where manage.py lives (of course lol)
+
+python manage.py showmigrations -- ( to see what has happened, and what can happen - crossed ones are applied, uncrossed are not)
+python manage.py makemigrations - it does nothing, just shows you what is to be done
+python manage.py migrate - it'll mnigrate what was shown in makemigrations command's output
+the actuall db changes (schema, new table.. anything) will be done via above
+
+
+DB configs - inside settings.py (define which DB to use - kaun sa karna hai ? ya karna bhi hai  >)
+
+db create krte hain
+aur 1 user
+ye server automatically changes reload krta hai,, only python and server side changes, not the html and client ones
+
+ye static files kabhi 1 baar me nahi chalta
+
+https://docs.djangoproject.com/en/2.2/howto/static-files/
+

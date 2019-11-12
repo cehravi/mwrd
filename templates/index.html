@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MWRD</title>
+    {% load staticfiles %}
+    {% load staticfiles %}
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-reboot.min.css' %}">
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'https://kit.fontawesome.com/03a619aa79.js' %}" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+    #header{
+        /*box-shadow: 0 4px 6px -6px black;*/
+        box-shadow: 0px 0 6px rgba(0, 0, 0, 0.8);
+
+    }
+    body {
+
+        background: #B2FEFA;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    #login_box{
+        float: bottom;
+        height: 370px;
+        width: 380px;
+        border-radius:4px;
+        background-color: #FFFFFF;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow:         3px 6px 10px -6px black;
+    }
+
+    hr {
+        width: 100%;
+        height:1px;
+        margin-top: 30px;
+        background-color:#EFF1F4;
+        opcaity: 0.5;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0px 0 6px rgba(0, 0, 0, 0.8);
+    }
+    .butLogin {
+        background-color: #0ED2F7;
+        border-color: #0ED2F7;
+    }
+    .butLogin:hover {
+        background-color: #FFFFFF;
+        color: #0ED2F7;
+        border-color: #0ED2F7;
+    }
+    .chkbox:checked{
+        color: #0ED2F7;
+    }
+    .butSignUp {
+        background-color: #FFFFFF;
+        color: #0ED2F7;
+        border-color: #0ED2F7;
+    }
+    .butSignUp:hover {
+        background-color: #0ED2F7;
+        border-color: #0ED2F7;
+    }
+    .textbox{
+
+    }
+    nav{
+    }
+</style>
+
+<body >
+<!--header Starts-->
+<nav id="header" class="navbar navbar-expand-sm bg-white navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+        <img src="img/logo_header_blue.png" height="104" width="408" alt="logo"/>
+    </a>
+</nav>
+<!-- header Ends-->
+
+<div id="login_box" >
+    <h5 style="color: #5F6772; margin-top: 20px;margin-left: 20px">Login</h5>
+    <hr>
+    <h3 style="text-align:center;color: #5F6772;">Welcome back!</h3>
+    <form action="http://localhost:63342/test/home.html?_ijt=koq6836odlpo700b08fnbmeeb8" style="margin: 30px">
+        <div class="form-group"  >
+            <input type="text" class="form-control" id="email" placeholder="Username ">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="pwd" placeholder="Password">
+        </div>
+        <div class="form-group form-check" style="text-align: center">
+            <label class="form-check-label">
+                <input class="form-check-input chkbox" type="checkbox" style=" "> Remember me
+            </label>
+        </div>
+        <div style="align-items: center; width: 100%">
+            <button type="signup" class="btn btn-primary butSignUp" style="width: 40% ; position: absolute;left: 30px;">Sign up</button>
+            <button type="submit" class="btn btn-primary butLogin" style="width: 40% ;position: absolute;right: 30px ">Log in</button>
+        </div>
+    </form>
+</div>
+
+<!--Footer Starts-->
+<footer id="sticky-footer" class="py-4 bg-light text-white-50 container-fluid footer ">
+    <div class="row align-items-baseline">
+        <div class="col-sm-6">
+            <small>Copyright &copy; Minor Water Resources Department</small>
+        </div>
+        <div class="col-sm-6 text-right"><img src="img/mwrd_logo.png" height="39" width="99"/>
+        </div>
+    </div>
+</footer>
+<!--Footer Ends-->
+
+</body>
+</html>
